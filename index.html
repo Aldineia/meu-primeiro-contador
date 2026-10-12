@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="refresh" content="10"/> <!----- Atualiza a página a cada 10 segundos --->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-----Resposta a diferentes tamanhos de tela-->
+    <link rel="stylesheet" href="./css/style.css"/> <!-----Vinculação do arquivo CSS---->
+    <title>Estrutura de Projeto Básico - Contador</title> <!--Título da página---->
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    <p>Este é meu primeiro projeto Javascript.</p>
+    <p>Clique nos botões para alterar o valor.</p>
+    </header>
+
+<!---Container do Contador---->
+    <main id="counter">
+        <!-- O id é essencial para o document.getElementById do JS funcionar -->
+        <button id="subtrair" name="subtrair" aria-label="Subtrair um">-</button>
+        <span id="currentNumber">0</span>
+        <button id="adicionar" name="adicionar" aria-label="Adicionar um">+</button>
+    </main>
+    
+    <!-- Vinculação do arquivo Javascript-->
+    <script src="./js/teste.js"></script>
+</body>
+</html>

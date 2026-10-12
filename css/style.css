@@ -1,0 +1,132 @@
+/* ===============================
+1. Configurações Gerais e Reset
+================================= */ 
+*{
+    padding:0; /* Remover espaços internos */
+    margin:0; /* Remove espaço externo */
+    box-sizing:border-box; /* dimensionamento de caixa incluindo bordas e preenchimento */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+    background-color: #f0f2f5; /* Define a cor de fundo da página */
+    color: #4b5563; /* Define a cor do texto */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding: 20px; /* Adicionar preenchimento ao redor do conteúdo */
+}
+/*Título e texto de introdução*/
+
+header{
+        text-align:center; /*Centraliza o conteúdo do cabeçalho */
+}
+
+h1{
+        font-size: 2.5rem; /* Define o tamanho do título */
+        color:#1f2937; /* Define a cor do título */
+        margin-bottom: 8px;
+        font-weight: 700; /* Define a espessura da fonte do título */
+}
+
+p{
+        font-size:1.2rem; /* Define o tamnho do texto*/
+        color:#6b7280; /* Define a cor do texto */
+        margin-bottom: 4px;
+        text-align:center;
+}
+
+/*Espaçamneto extra para o último parágrafo*/
+p:last-of-type{
+        margin-bottom:30px;
+}
+
+/*=======================
+    2. Container Principal do Contador
+=========================*/
+
+#counter{
+    background-color:#ffffff; /* Define a cor de fundo do container */
+    padding: 30px 40px; /* Adiciona preenchimento interno */
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 
+                0 4px 12px rgba(0, 0, 0, 0.03);
+    display: flex;
+    align-items:center;
+    justify-content :center;
+    gap:30px;
+    transition: transform  0.2s ease; /* Adiciona uma transição suave para transformações */
+}
+
+/* Efeito sutil ao passar o mouse no card */
+#counter:hover{
+    transform: translateY(-2px); /* Move o card levemente para cima */
+}
+
+/*=======================
+3. Estilização dos Botões
+=========================*/
+#counter button{
+    width: 55px; /* Define a largura do potão */
+    height:55px;
+    border:none; /* Remove a borda padrão */
+    border-radius: 12px; /*Adiciona bordas arredondadas */
+    font-size: 1.8rem; /* Define o tamanho da fonte do botão */
+    font-weight:600; /* Define a espessura da fonte do botão */
+    cursor:pointer; /* Altera o cursor para indicar que é clicável */
+    display:flex; /* Define o botão como um container flexível */
+    align-items:center; /* Centralizar verticalmente o conteúdo do botão */
+    justify-content:center; /* Centralizar horizontalmente o conteúdo do botão */
+    transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
+}
+
+/* Estilização do botão de subtração (-) */
+#subtrair{
+    background-color: #fee2e2; /* Define a cor de fundo do botão */
+    color:#ef4444; /* Define a cor do texto do botão */
+}
+
+#subtrair:hover:not(:disabled){
+    background-color: #fca5a5; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho do botão */
+}
+
+/* Estilização do botão de adição (+) */
+#adicionar{
+    background-color:#dcfce7; /* Define a cor de fundo do botão */
+    color: #22c55e; /* Define a cor do texto do botão*/
+}
+
+#adicionar:hover:not(:disabled){
+    background-color: #86efca; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de clique físico no botão */
+}
+
+/*Efeito de clique físico real para ambos os botões */
+#counter button:active:not(:disabled){
+    transform: scale(0.95); /* Reduz o tamanho do botão ao clicar */
+}
+
+/* Estado desabilitado dos botões */
+#counter button:disabled { 
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none !important;
+}
+
+/*=======================
+    4. Estilização do número Central
+=========================*/
+#currentNumber{
+    font-size: 4rem; /* Define o tamanho do número central */
+    font-weight: 800; /* Define a espessura da fonte do número central*/ 
+    min-width: 90px; /* Define uma largura mínima para o número central */
+    text-align:center; /* Centraliza o número*/
+    color: #111827; /* Define a cor do número central */
+    user-select: none; /* Impede a seleção do número central */
+    transition: color 0.2s ease; /* Adicionar transição suave para a cor do número central */
+}
