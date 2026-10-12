@@ -1,16 +1,16 @@
-﻿# 🔢 Projeto Contador - Meu Primeiro Passo no JavaScript
+﻿#  Projeto Contador - Meu Primeiro Passo no JavaScript
 
 Este é o meu primeiro projeto prático utilizando **JavaScript**, desenvolvido como parte do ecossistema de aprendizado da **DIO (Digital Innovation One)**. O objetivo principal foi aplicar os fundamentos de manipulação do DOM (Document Object Model), escuta de eventos e lógica condicional.
 
 ---
 
-## 🚀 Demonstração
+##  Demonstração
 
 O projeto consiste em um contador interativo e totalmente estilizado onde o usuário pode incrementar ou decrementar valores de forma dinâmica através de cliques.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * **HTML5:** Estruturação semântica e acessível do cabeçalho e container.
 * **CSS3:** Estilização moderna com Flexbox, sombras suaves (`box-shadow`), gradientes e efeitos físicos de clique nos botões (`:active`).
@@ -18,7 +18,7 @@ O projeto consiste em um contador interativo e totalmente estilizado onde o usu�
 
 ---
 
-## 🏆 Desafios Concluídos
+##  Desafios Concluídos
 
 Durante o desenvolvimento, implementei com sucesso os seguintes desafios de lógica e boas práticas:
 
@@ -29,7 +29,7 @@ Durante o desenvolvimento, implementei com sucesso os seguintes desafios de lóg
 
 ---
 
-## 🔧 Como Executar o Projeto Localmente
+##  Como Executar o Projeto Localmente
 
 1. Clone este repositório no seu computador:
    ```bash
@@ -40,7 +40,7 @@ Durante o desenvolvimento, implementei com sucesso os seguintes desafios de lóg
 
 ---
 
-## 👤 Autora
+##  Autora
 
 * **Aldineia** 
 
